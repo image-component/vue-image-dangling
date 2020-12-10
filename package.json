@@ -1,15 +1,14 @@
 {
-  "name": "vue-component-template",
+  "name": "vue-image-dangling",
   "version": "0.0.1",
-  "main": "./dist/template.umd.min.js",
+  "main": "./dist/index.umd.min.js",
   "files": [
     "dist"
   ],
   "private": false,
   "scripts": {
     "start": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name template ./src/index.js",
-    "prepublishOnly": "npm run build && np --yolo --no-publish",
+    "build": "vue-cli-service build --target lib --name index ./src/index.js",
     "docs:start": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "gh-pages -d docs-dist",
@@ -18,11 +17,11 @@
   "author": "xrkffgg",
   "repository": {
     "type": "git",
-    "url": "git@github.com/one-template/vue-component-template"
+    "url": "git@github.com/image-component/vue-image-dangling"
   },
-  "homepage": "https://github.com/one-template/vue-component-template",
+  "homepage": "https://github.com/image-component/vue-image-dangling",
   "bugs": {
-    "url": "https://github.com/one-template/vue-component-template/issues"
+    "url": "https://github.com/image-component/vue-image-dangling/issues"
   },
   "keywords": [
     "vue",

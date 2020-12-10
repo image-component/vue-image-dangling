@@ -1,2 +1,2 @@
-import ComponentTemplate from "./template.vue";
-export default ComponentTemplate;
+import ImageDangling from "./image.vue";
+export default ImageDangling;
