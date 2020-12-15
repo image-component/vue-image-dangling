@@ -1,108 +1,53 @@
-# 🌈 vue-component-template
+# 🌈 vue-image-dangling
 
-A template for rapid development of vue2 components to satisfy component development, packaging, release, document development, document packaging, and document deployment.
+A Vue image component. Dangling interaction effect
 
-English | [简体中文](./README.zh-CN.md)
+[![npm](https://img.shields.io/npm/v/vue-image-dangling?style=flat-square&color=orange)](https://www.npmjs.com/package/vue-image-dangling) ![test-ci](https://github.com/image-component/vue-image-dangling/workflows/test-ci/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/vue-image-dangling/main?color=%23722ed1&style=flat-square) ![](https://img.shields.io/npm/dt/vue-image-dangling?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/vue-image-dangling?style=flat-square&color=red)
 
-## 💖 How to use?
+## 📚 Example
 
-![](./assets/1.png)
+Online: https://image-component.github.io/vue-image-dangling/
 
-## 💎 Catalog Introduction
+## 🌀 Template
 
-```
-├── assets                 Store fixed resources
-├── docs                   Component documentation
-│   ├── .vuepress          VuePress
-│   │   ├── components     Demo use
-│   │   ├── config.js      VuePress main configuration
-│   │   └── enhanceApp.js  VuePress expand configuration
-│   ├── README.md          Used to show component introduction
-│   ├── changelog.md       Used to display component history
-│   └── demo.md            Used to display component Demo
-├── examples               Component development and debugging
-├── public                 Component development and debugging display
-├── src                    Component home directory
-│   ├── index.js           Component registration
-│   └── template.vue       Component implementation code
-└── vue.config.js          Component development package configuration
-```
+https://github.com/one-template/vue-component-template
 
-## 🤖 Command introduction
-
-| Name | Description | Remarks |
-| -- | -- | -- |
-| `npm run start` | Start component development | - |
-| `npm run build` | Component packaging | - |
-| `npm publish` | Component release | Recommended for first removal prepublishOnly |
-| `npm run docs:start` | Document start | - |
-| `npm run docs:build` | Document packaging | - |
-| `npm run docs:deploy` | Document release | The default is to use GitHub Pages |
-| `npm run deploy` | Document package and release | - |
-
-## 🍭 Component
-
-### Development
+## 📦 Install
 
 ```bash
-npm i
-npm run start
-# http://localhost:8080/
+npm i vue-image-dangling
+# or
+yarn add vue-image-dangling
 ```
 
-### Unpack
+## 🎉 Usage
+
+```js
+// main.js
+import ImageDangling from 'vue-image-dangling'
+Vue.component('image-dangling', ImageDangling)
+```
+
+## 📔 API
+
+| Property   | Description                                                                                                                                                                        | Type              | Required | Default | Version |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- | ------- | ------- |
+| alt        | The alt of the image.                                                                                                                                                              | string            | ✖        | -       | 1.0.0   |
+| blendMode  | Whether to enable `mix-blend-mode`.<br/> When set `true`, the default is `soft-light`. More see [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). | boolean \| string | ✖        | false   | 1.0.0   |
+| className  | Component extra class.                                                                                                                                                             | string            | ✖        | -       | 1.0.0   |
+| hoverScale | The hover scale of the image. Require `>= 1 && <=5`.                                                                                                                               | number            | ✖        | 2       | 1.0.0   |
+| hoverSlope | The hover slope of the image. Require `>= 10 && <=90`.                                                                                                                             | number            | ✖        | 60      | 1.0.0   |
+| radius     | The border radius of the component.                                                                                                                                                | number            | ✖        | 8       | 1.0.0   |
+| src        | The src of the image.                                                                                                                                                              | string            | ✔        | -       | 1.0.0   |
+| width      | The width of the image.                                                                                                                                                            | number            | ✖        | 300     | 1.0.0   |
+
+## 🔨 Development
 
 ```bash
-npm run build
+yarn
+yarn start
 ```
-
-- Remove map by default
-- Do not pull independent CSS files by default
-- More view official website configuration
-- The package file is generated in the dist file by default
-
-### Release
-
-> `package.json` introduction
-
-1. If you want to publish npm, `private` needs to be set to `false`.
-2. The build command can be modified according to actual conditions.
-3. After main decides to install the component, import points to it.
-4. files Contains the files at the time of publishing, and includes README.md by default.
-5. Others can be understood according to the meaning of the word.
-
-## 📚 Documentation
-
-### Start
-
-```bash
-npm run docs:start
-# http://localhost:8888/
-```
-
-### Online preview
-
-https://one-template.github.io/vue-component-template/
-
-### Description
-
-- Use VuePress
-- Use basic layout, please add more by yourself
-- Component references, currently need to be copied to components, if there is a better way, please PR
-- Because the document is deployed on GitHub Pages, the `base` of `config.js` is set to the project name
-- Update the `highlight.js` version carefully
-- One 🌰 : [Knotes](https://github.com/xrkffgg/Knotes)
-
-## 🎈 Aide
-
-- [Issue template](https://github.com/one-template/issue-template)
-- [PR template](https://github.com/one-template/pr-template)
-- [Actions use](https://github.com/github-actions-workflows/.github)
-
-## 🎉 Who are using？
-
-- [image-tool/vue-image-shadow](https://github.com/image-tool/vue-image-shadow)
 
 ## License
 
-[MIT](https://github.com/one-template/vue-component-template/blob/main/LICENSE)
+[MIT](https://github.com/image-component/vue-image-dangling/blob/main/LICENSE)
