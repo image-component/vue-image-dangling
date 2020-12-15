@@ -9,7 +9,7 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name index ./src/index.js",
-    "prepublishOnly": "np --yolo --no-publish",
+    "prepublishOnly": "npm run build && np --yolo --no-publish",
     "docs:start": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "gh-pages -d docs-dist",
