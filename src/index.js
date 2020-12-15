@@ -1,2 +1,2 @@
-import ImageDangling from "./image.vue";
+import ImageDangling from "./app.vue";
 export default ImageDangling;

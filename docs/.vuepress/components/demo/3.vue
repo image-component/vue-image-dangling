@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
-    <image-dangling :src="src1"></image-dangling>
-    <image-dangling :src="src2" :radius="20"></image-dangling>
+    <image-dangling :src="src1" blend-mode></image-dangling>
+    <image-dangling :src="src2" blend-mode="saturation"></image-dangling>
   </div>
 </template>
 
@@ -21,12 +21,3 @@ export default {
   },
 }
 </script>
-
-<style>
-  .demo {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-</style>

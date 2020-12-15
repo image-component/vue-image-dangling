@@ -1,21 +1,23 @@
 <template>
   <div class="demo">
-    <component-template msg="hello"></component-template>
+    <image-dangling :src="src1" :hover-scale="2"></image-dangling>
+    <image-dangling :src="src2" :hover-slope="20"></image-dangling>
   </div>
 </template>
 
 <script>
-import ComponentTemplate from '../template'
+import ImageDangling from '../app'
 
 export default {
   components: {
-    ComponentTemplate,
+    ImageDangling,
+  },
+
+  data() {
+    return {
+      src1: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true',
+      src2: 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true',
+    }
   },
 }
 </script>
-
-<style scoped>
-  .demo {
-    color: red;
-  }
-</style>

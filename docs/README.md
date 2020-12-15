@@ -1,28 +1,53 @@
-# Guide
+# 🌈 vue-image-dangling
 
-## Introduction
+A Vue image component. Dangling interaction effect.
 
-This is a vue component.
+[![npm](https://img.shields.io/npm/v/vue-image-dangling?style=flat-square&color=orange)](https://www.npmjs.com/package/vue-image-dangling) ![test-ci](https://github.com/image-component/vue-image-dangling/workflows/test-ci/badge.svg) ![](https://img.shields.io/github/last-commit/image-component/vue-image-dangling/main?color=%23722ed1&style=flat-square) ![](https://img.shields.io/npm/dt/vue-image-dangling?color=%23eb2f96&style=flat-square) ![](https://img.shields.io/npm/l/vue-image-dangling?style=flat-square&color=red)
 
-## Install
+## 📚 Example
+
+Online: [https://image-component.github.io/vue-image-dangling/](https://image-component.github.io/vue-image-dangling/)
+
+## 🌀 Template
+
+[https://github.com/one-template/vue-component-template](https://github.com/one-template/vue-component-template)
+
+## 📦 Install
 
 ```bash
-npm i xx-xx
+npm i vue-image-dangling
 # or
-yarn add xx-xx
+yarn add vue-image-dangling
 ```
 
-## Usage
+## 🎉 Usage
 
 ```js
 // main.js
-import xx from 'xx-xx';
-Vue.component('x-x', xx);
+import ImageDangling from 'vue-image-dangling'
+Vue.component('image-dangling', ImageDangling)
 ```
 
-## API
+## 📔 API
 
-| name | descript | type |
-| -- | -- | -- |
-| xx | xx | xx |
+| Property   | Description                                                                                                                                                                        | Type              | Required | Default | Version |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- | ------- | ------- |
+| alt        | The alt of the image.                                                                                                                                                              | string            | ✖        | -       | 1.0.0   |
+| blendMode  | Whether to enable `mix-blend-mode`.<br/><br/> When set `true`, the default is `soft-light`. More see [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). | boolean \| string | ✖        | false   | 1.0.0   |
+| className  | Component extra class.                                                                                                                                                             | string            | ✖        | -       | 1.0.0   |
+| hoverScale | The hover scale of the image. Require `>= 1 && <=5`.                                                                                                                               | number            | ✖        | 1.6       | 1.0.0   |
+| hoverSlope | The hover slope of the image. Require `>= 10 && <=90`.                                                                                                                             | number            | ✖        | 60      | 1.0.0   |
+| radius     | The border radius of the component.                                                                                                                                                | number            | ✖        | 8       | 1.0.0   |
+| src        | The src of the image.                                                                                                                                                              | string            | ✔        | -       | 1.0.0   |
+| width      | The width of the image.                                                                                                                                                            | number            | ✖        | 300     | 1.0.0   |
 
+## 🔨 Development
+
+```bash
+yarn
+yarn start
+```
+
+## License
+
+[MIT](https://github.com/image-component/vue-image-dangling/blob/main/LICENSE)

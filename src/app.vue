@@ -37,7 +37,7 @@ export default {
     },
     hoverScale: {
       type: Number,
-      default: 2,
+      default: 1.6,
       validator: val => val >= 1 && val <= 5
     },
     hoverSlope: {
