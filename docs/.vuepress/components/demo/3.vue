@@ -15,8 +15,8 @@ export default {
 
   data() {
     return {
-      src1: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true',
-      src2: 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true',
+      src1: 'https://github.com/image-component/gallery/blob/main/girl/5.jpg?raw=true',
+      src2: 'https://github.com/image-component/gallery/blob/main/girl/6.jpg?raw=true',
     }
   },
 }

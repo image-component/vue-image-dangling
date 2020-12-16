@@ -18,8 +18,8 @@ Basic image settings.
       export default {
         data() {
           return {
-            src1: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true',
-            src2: 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true',
+            src1: 'https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true',
+            src2: 'https://github.com/image-component/gallery/blob/main/girl/2.jpg?raw=true',
           }
         },
       }
@@ -54,8 +54,8 @@ Use `hoverScale` `hoverSlope` to achieve different hover effects.
       export default {
         data() {
           return {
-            src1: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true',
-            src2: 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true',
+            src1: 'https://github.com/image-component/gallery/blob/main/girl/3.jpg?raw=true',
+            src2: 'https://github.com/image-component/gallery/blob/main/girl/4.jpg?raw=true',
           }
         },
       }
@@ -86,8 +86,8 @@ Use `blendMode` to achieve different background blending effects.
       export default {
         data() {
           return {
-            src1: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true',
-            src2: 'https://github.com/image-component/react-image-shadow/blob/main/image/blue.jpg?raw=true',
+            src1: 'https://github.com/image-component/gallery/blob/main/girl/5.jpg?raw=true',
+            src2: 'https://github.com/image-component/gallery/blob/main/girl/6.jpg?raw=true',
           }
         },
       }

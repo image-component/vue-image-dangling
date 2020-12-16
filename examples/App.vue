@@ -10,7 +10,7 @@
   export default {
     data() {
       return {
-        src: 'https://github.com/image-component/react-image-shadow/blob/main/image/white.jpg?raw=true'
+        src: 'https://github.com/image-component/gallery/blob/main/girl/1.jpg?raw=true'
       }
     }
   }
