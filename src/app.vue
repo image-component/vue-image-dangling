@@ -48,6 +48,10 @@ export default {
     blendMode: {
       type: [Boolean, String],
       default: false,
+    },
+    shadeColor: {
+      type: String,
+      default: '#000'
     }
   },
 
@@ -106,14 +110,13 @@ export default {
       const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
       const lightOpacity = this.scale(lightConstrain, 0.3, 1, 1, 0) * 255;
       const lightShade = `rgba(${lightOpacity}, ${lightOpacity}, ${lightOpacity}, 1)`;
-      const lightShadeBlack = `rgba(0, 0, 0, 1)`;
       if (this.blendMode) {
         if(typeof(this.blendMode) == 'string') {
           card.style.mixBlendMode = this.blendMode;
         } else {
           card.style.mixBlendMode = 'soft-light';
         }
-        card.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`;
+        card.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${this.shadeColor})`;
       }
     },
 

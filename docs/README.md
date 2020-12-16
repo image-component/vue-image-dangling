@@ -6,11 +6,11 @@ A Vue image component. Dangling interaction effect.
 
 ## 📚 Example
 
-Online: [https://image-component.github.io/vue-image-dangling/](https://image-component.github.io/vue-image-dangling/)
+Online: https://image-component.github.io/vue-image-dangling/
 
 ## 🌀 Template
 
-[https://github.com/one-template/vue-component-template](https://github.com/one-template/vue-component-template)
+https://github.com/one-template/vue-component-template
 
 ## 📦 Install
 
@@ -33,11 +33,12 @@ Vue.component('image-dangling', ImageDangling)
 | Property   | Description                                                                                                                                                                        | Type              | Required | Default | Version |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- | ------- | ------- |
 | alt        | The alt of the image.                                                                                                                                                              | string            | ✖        | -       | 1.0.0   |
-| blendMode  | Whether to enable `mix-blend-mode`.<br/><br/> When set `true`, the default is `soft-light`. More see [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). | boolean \| string | ✖        | false   | 1.0.0   |
+| blendMode  | Whether to enable `mix-blend-mode`.<br/> When set `true`, the default is `soft-light`. More see [mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode). | boolean \| string | ✖        | false   | 1.0.0   |
 | className  | Component extra class.                                                                                                                                                             | string            | ✖        | -       | 1.0.0   |
 | hoverScale | The hover scale of the image. Require `>= 1 && <=5`.                                                                                                                               | number            | ✖        | 1.6       | 1.0.0   |
 | hoverSlope | The hover slope of the image. Require `>= 10 && <=90`.                                                                                                                             | number            | ✖        | 60      | 1.0.0   |
 | radius     | The border radius of the component.                                                                                                                                                | number            | ✖        | 8       | 1.0.0   |
+| shadeColor | To set the mixed background color when use `blendMode`.                                                                                                                            | string            | ✖        | `#000`  | 1.1.0   |
 | src        | The src of the image.                                                                                                                                                              | string            | ✔        | -       | 1.0.0   |
 | width      | The width of the image.                                                                                                                                                            | number            | ✖        | 300     | 1.0.0   |
 

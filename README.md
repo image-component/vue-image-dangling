@@ -38,6 +38,7 @@ Vue.component('image-dangling', ImageDangling)
 | hoverScale | The hover scale of the image. Require `>= 1 && <=5`.                                                                                                                               | number            | ✖        | 1.6       | 1.0.0   |
 | hoverSlope | The hover slope of the image. Require `>= 10 && <=90`.                                                                                                                             | number            | ✖        | 60      | 1.0.0   |
 | radius     | The border radius of the component.                                                                                                                                                | number            | ✖        | 8       | 1.0.0   |
+| shadeColor | To set the mixed background color when use `blendMode`.                                                                                                                            | string            | ✖        | `#000`  | 1.1.0   |
 | src        | The src of the image.                                                                                                                                                              | string            | ✔        | -       | 1.0.0   |
 | width      | The width of the image.                                                                                                                                                            | number            | ✖        | 300     | 1.0.0   |
 
